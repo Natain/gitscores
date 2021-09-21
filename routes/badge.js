@@ -1,6 +1,6 @@
 // Badge Route
 
-const HOST = "gitwar.herokuapp.com";
+const HOST = "gitscores.herokuapp.com";
 
 const express = require("express");
 const router = express.Router();
@@ -9,14 +9,14 @@ router.get("/", async (req, res) => {
   if (!req.query) {
     res
       .status(404)
-      .redirect("https://img.shields.io/badge/Gitwar%20Score-NULL-red");
+      .redirect("https://img.shields.io/badge/Gitscores%20Score-NULL-red");
   }
 
   console.log(req.query);
 
   const username = req.query.username.toString();
 
-  const label = req.query.label || "Gitwar Score";
+  const label = req.query.label || "Gitscores Score";
   const style = req.query.style || "flat";
   const color = req.query.color || "0088cc";
   const logo = req.query.logo || "github";

@@ -1,6 +1,6 @@
 {
-  "name": "gitwar",
-  "description": "Gitwar - Compete with Git",
-  "repository": "https://github.com/iampavangandhi/Gitwar",
+  "name": "gitscore",
+  "description": "Gitscores - Compete with Git",
+  "repository": "https://github.com/Natain/Gitscores",
   "keywords": ["nodejs", "express", "github", "github-api", "github-profile"]
 }
