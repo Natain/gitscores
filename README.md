@@ -4,9 +4,9 @@
 
 # **Gitscores - Compete with Github**
 
-![Version](https://img.shields.io/github/package-json/v/Natain/Gitscores?color=2948ff&label=Version&style=flat-square) ![License](https://img.shields.io/github/license/Natain/Gitscores?color=2948ff&label=License&style=flat-square) ![Deployment](https://img.shields.io/github/deployments/Natain/Gitscores/Gitscores?color=2948ff&label=Deployment&style=flat-square) ![Repo Size](https://img.shields.io/github/repo-size/Natain/Gitscores?color=2948ff&label=Repo%20Size&style=flat-square)
+![Version](https://img.shields.io/github/package-json/v/Natain/Gitscores?color=2948ff&label=Version&style=flat-square) ![License](https://img.shields.io/github/license/Natain/Gitscores?color=2948ff&label=License&style=flat-square) ![Deployment](https://img.shields.io/github/deployments/Natain/gitscores/gitscores?color=2948ff&label=Deployment&style=flat-square) ![Repo Size](https://img.shields.io/github/repo-size/Natain/gitscores?color=2948ff&label=Repo%20Size&style=flat-square)
 
-## Website : https://gitscores.herokuapp.com/
+## Website : https://gitscores.herokuapp.com/ 
 
 ---
 
