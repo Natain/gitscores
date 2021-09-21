@@ -1,0 +1,88 @@
+<div class="profile">
+  <div class="form">
+    <form action="/compare" method="POST">
+      <h1 class="page-header">Enter Your Github Username</h1>
+      <input
+        class="username-input"
+        style="margin-bottom: 2%"
+        type="text"
+        name="username1"
+        placeholder="username 1"
+        value=""
+      />
+      <input
+        class="username-input"
+        type="text"
+        name="username2"
+        placeholder="username 2"
+        value=""
+      />
+      <br />
+      <button style="margin-top: 3%" class="profile-button" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+  <% if (userProfile1.score > userProfile2.score) { %> <% var x = "green"; var y
+  = "red" %> <% } %> <% if (userProfile1.score < userProfile2.score) { %> <% var
+  x = "red"; var y = "green" %> <% } %>
+  <div class="users">
+    <div class="user-profiles <%= x %>">
+      <img
+        src="<%= userProfile1.avatar %>"
+        class="user-profile-image"
+        alt=""
+        width="125px"
+        height="125px"
+      />
+
+      <h3><%= userProfile1.username %></h3>
+
+      <div class="user-profile-text">
+        <p>Public Repos: <%= userProfile1.public_repos %></p>
+        <p>Stars on Repos: <%= userProfile1.repo_stars %></p>
+        <p>Forks on Repos: <%= userProfile1.repo_forks %></p>
+        <p>Github Followers: <%= userProfile1.followers %></p>
+        <p>Joined Organizations: <%= userProfile1.user_orgs %></p>
+      </div>
+
+      <div id="score1" class="profile-score">
+        Score: <%= userProfile1.score %>
+      </div>
+      <div class="padd"></div>
+      <a class="user-profile-link" href="<%= userProfile1.url %>"
+        >View on Github</a
+      >
+      <div class="padd"></div>
+    </div>
+    <div class="vs"><h1>V/S</h1></div>
+    <div class="user-profiles <%= y %>">
+      <img
+        src="<%= userProfile2.avatar %>"
+        class="user-profile-image"
+        alt=""
+        width="125px"
+        height="125px"
+      />
+
+      <h3><%= userProfile2.username %></h3>
+
+      <div class="user-profile-text">
+        <p>Public Repos: <%= userProfile2.public_repos %></p>
+        <p>Stars on Repos: <%= userProfile2.repo_stars %></p>
+        <p>Forks on Repos: <%= userProfile2.repo_forks %></p>
+        <p>Github Followers: <%= userProfile2.followers %></p>
+        <p>Joined Organizations: <%= userProfile2.user_orgs %></p>
+      </div>
+
+      <div id="score2" class="profile-score">
+        Score: <%= userProfile2.score %>
+      </div>
+      <div class="padd"></div>
+      <a class="user-profile-link" href="<%= userProfile2.url %>"
+        >View on Github</a
+      >
+      <div class="padd"></div>
+    </div>
+  </div>
+</div>

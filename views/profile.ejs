@@ -1,0 +1,43 @@
+<div class="profile">
+  <div class="form">
+    <form action="/profile" method="POST">
+      <h1 class="page-header">Enter Your Github Username</h1>
+      <input
+        class="username-input"
+        type="text"
+        name="username"
+        placeholder="username"
+        value=""
+      />
+      <button class="profile-button" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="padd"></div>
+  <div class="user-profile">
+    <img
+      src="<%= userProfile.avatar %>"
+      class="user-profile-image"
+      alt=""
+      width="140px"
+      height="140px"
+    />
+
+    <h3><%= userProfile.username %></h3>
+
+    <div class="user-profile-text">
+      <%= userProfile.name != "NULL" ? userProfile.name : "Display Name: NULL"
+      %>
+
+      <p>Public Repos: <%= userProfile.public_repos %></p>
+      <p>Stars on Repos: <%= userProfile.repo_stars %></p>
+      <p>Forks on Repos: <%= userProfile.repo_forks %></p>
+      <p>Github Followers: <%= userProfile.followers %></p>
+      <p>Joined Organizations: <%= userProfile.user_orgs %></p>
+    </div>
+
+    <div class="profile-score">Score: <%= userProfile.score %></div>
+    <div class="padd"></div>
+    <a class="user-profile-link" href="<%= userProfile.url %>">View on Github</a>
+    <div class="padd"></div>
+  </div>
+</div>
